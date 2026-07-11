@@ -463,6 +463,360 @@ body {
             }
         }    
 
+
+
+        /* contact  */
+
+body{
+
+    background:#12171B;
+
+}
+
+.contact-section{
+
+    padding:90px 0;
+
+}
+
+.contact-wrapper{
+
+    border-radius:35px;
+
+    padding:60px;
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+    background: #78964B;
+
+}
+
+.contact-info,
+.contact-form{
+    flex:1;
+}
+.page-path{
+
+    color:#12171B;
+
+    font-size:14px;
+
+}
+
+.contact-info h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    color:#12171B;
+
+    line-height:1;
+
+    margin:20px 0;
+    text-align: left;
+
+}
+
+.contact-info p{
+
+    color:#30352f;
+    font-size:16px;
+    line-height:30px;
+    max-width: 450px;
+
+}
+.info-box{
+    background:rgba(20, 31, 27, 0.15);
+    padding: 18px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+}
+.info-box:hover{
+    transform: translateX(8px);
+    background: #29551d;
+}
+
+.icon-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #29551d;
+    color: #f5a306;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.info-box:hover .icon-box{
+    background: #f5a306;
+    color: #12171b;
+}
+.info-content span{
+    font-size: 14px;
+    color: #12171B;
+    opacity: 0.6;
+}
+.info-content p{
+    margin: 3px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.arrow{
+    margin-left: auto;
+    color: #F5A306;
+}
+.info-box p{
+    font-size: 14px;
+    margin: 0;
+}
+.info-box i{
+    font-size: 20px;
+}
+.info-box .gray-text{
+    color:#12171B;
+    font-weight: 100;
+    margin: 0;
+}
+
+
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #F5A306;
+  transition: .3s ease;
+}
+
+a:hover {
+  color: #29551D;
+}
+
+
+/* Form Container */
+
+.form {
+ width: 100%;
+ 
+  background: #141F1B;
+
+  padding: 45px;
+
+  margin:0;
+
+  border-radius: 25px;
+
+}
+
+/* Labels */
+
+label {
+
+position:absolute;
+
+transform:translateY(10px);
+
+left:18px;
+
+color:rgba(246,244,238,.5);
+
+transition:.3s;
+
+pointer-events:none;
+
+font-size:18px;
+
+}
+
+
+label .req {
+
+color:#F5A306;
+
+}
+
+
+/* Inputs */
+
+input,
+textarea {
+
+
+font-size:18px;
+
+display:block;
+
+width:100%;
+
+padding:15px 18px;
+
+background:#12171B;
+
+border:1px solid rgba(246,244,238,.15);
+
+color:#F6F4EE;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+
+input:focus,
+textarea:focus {
+
+
+outline:none;
+
+border-color:#F5A306;
+
+box-shadow:0 0 0 3px rgba(245,163,6,.15);
+
+}
+
+
+
+textarea {
+
+min-height:150px;
+
+resize:none;
+
+}
+
+
+
+/* Field */
+
+.field-wrap {
+
+position:relative;
+
+margin-bottom:25px;
+
+}
+
+
+
+/* Two columns */
+
+.top-row {
+
+display:flex;
+
+gap:20px;
+
+}
+
+
+.top-row > div {
+
+width:50%;
+
+}
+
+
+
+/* Button */
+
+.button {
+
+
+border:none;
+
+outline:none;
+
+width:100%;
+
+padding:18px;
+
+font-size:20px;
+
+font-weight:700;
+
+border-radius:10px;
+
+background:#F5A306;
+
+color:#12171B;
+
+cursor:pointer;
+
+transition:.3s;
+
+
+}
+
+
+.button:hover,
+.button:focus {
+
+
+background:#29551D;
+
+color:#F6F4EE;
+
+
+}
+
+
+
+/* Full button */
+
+.button-block {
+
+display:block;
+
+}
+
+@media(max-width:900px){
+
+.contact-wrapper{
+
+    flex-direction:column;
+
+    padding:30px;
+
+}
+
+
+.contact-info h1{
+
+    font-size:40px;
+
+}
+
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+
+.top-row{
+
+    flex-direction:column;
+
+}
+
+
+.top-row > div{
+
+    width:100%;
+
+}
+
+}
 /*==========================================
 FOOTER=======================================*/
 .footer {
@@ -632,6 +986,7 @@ FOOTER=======================================*/
     }
 }
 
+<<<<<<< HEAD
 /*==============================================
 Hero design=======================================*/
 .swiper {
@@ -1002,3 +1357,8 @@ testimonials====================================*/
         .owl-next:before{
             content: "\f061";
         }
+=======
+
+
+
+>>>>>>> contact-page
