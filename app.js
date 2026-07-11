@@ -91,14 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-<<<<<<< HEAD
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 992 && mobileMenu.classList.contains('active')) {
-                    closeMobileMenu();
-                }
-            });
-        });
+
 //hero
         const swiper = new Swiper('.swiper', {
     // Genel ayarlar    
@@ -146,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
             autoPlay:true
         });
     });
-=======
+
   // Close mobile menu on escape key
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && mobileMenu.classList.contains("active")) {
@@ -200,4 +193,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
->>>>>>> contact-page
+
