@@ -39,8 +39,10 @@ body {
         font-size: 14px;
     }
 }
- /* ==================== ADVANCED NAVIGATION BAR ==================== */        .navbar-container {
-            position: fixed;
+ /* ==================== ADVANCED NAVIGATION BAR ==================== */       
+  .navbar-container {
+          
+    position: fixed;
             top: 30px;
             left: 50%;
             transform: translateX(-50%);
@@ -103,9 +105,8 @@ body {
             z-index: 2;
         }
 .logo {
-    height: 9.3rem;
+    height: 6rem;
     width: auto;
-
     overflow: hidden;
 }
 
