@@ -175,3 +175,19 @@
     // Geçiş efekti hızı (ms) 
     speed: 1500,
     });
+
+    // Testimonials 
+
+      $(document).ready(function(){
+        $('#testimonial-slider').owlCarousel({
+            items:1,
+            itemsDesktop:[1000,1],
+            itemsDesktopSmall:[979,1],
+            itemsTablet:[768,1],
+            pagination: false,
+            navigation:true,
+            navigationText:["",""],
+            slideSpeed:1000,
+            autoPlay:true
+        });
+    });
