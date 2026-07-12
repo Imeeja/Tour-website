@@ -1,0 +1,296 @@
+/*=========================
+      COLOR PALETTE
+==========================*/
+
+:root{
+    --black:#12171B;
+    --black-light:#141F1B;
+    --green:#29551D;
+    --yellow:#F5A306;
+    --white:#F6F4EE;
+}
+
+.Azadeh{
+    background:var(--black);
+    color:var(--white);
+    font-family: "Poppins",sans-serif;
+}
+
+
+/*=========================
+        HERO
+==========================*/
+
+.Azadeh .hero{
+
+    height:65vh;
+
+    background:
+    linear-gradient(rgba(18,23,27,.65),
+    rgba(18,23,27,.65)),
+    url(Azadehimage/hero.jpg);
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+}
+
+.Azadeh .hero-content h1{
+
+    font-size:4rem;
+    font-weight:700;
+}
+
+.Azadeh .hero-content p{
+
+    font-size:1.2rem;
+    width:60%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.Azadeh .hero-line{
+
+    width:90px;
+    height:5px;
+    background:var(--yellow);
+    margin:25px auto;
+    border-radius:20px;
+}
+
+
+/*=========================
+     TRAVEL SECTION
+==========================*/
+
+.Azadeh .travel-info{
+
+    background:var(--black);
+}
+
+.Azadeh .travel-card{
+
+    background:var(--black-light);
+
+    border:1px solid rgba(41,85,29,.7);
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.Azadeh .travel-card i{
+
+    font-size:55px;
+
+    color:#7CAF43;
+
+    margin-bottom:20px;
+
+    display:block;
+}
+
+.Azadeh .travel-card h3{
+
+    font-size:30px;
+
+    font-weight:600;
+}
+
+.Azadeh .title-line{
+
+    width:45px;
+
+    height:4px;
+
+    background:var(--yellow);
+
+    margin:15px auto 25px;
+
+    border-radius:20px;
+}
+
+.Azadeh .travel-card p{
+
+    color:#d8d8d8;
+
+    line-height:30px;
+}
+
+
+/* Hover */
+
+.Azadeh .travel-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--yellow);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+
+/*=========================
+      SAFETY
+==========================*/
+
+.Azadeh .safety{
+
+    background:linear-gradient(#1d3e15,#29551D);
+
+}
+
+.Azadeh .safety h2{
+
+    font-size:45px;
+
+    font-weight:bold;
+}
+
+.Azadeh .tip{
+
+    background:var(--black-light);
+
+    border-radius:18px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.Azadeh .circle{
+
+    width:90px;
+
+    height:90px;
+
+    background:var(--yellow);
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.Azadeh .circle i{
+
+    color:var(--black);
+
+    font-size:40px;
+}
+
+.Azadeh .tip p{
+
+    margin:0;
+
+    line-height:28px;
+}
+
+.Azadeh .tip:hover{
+
+    transform:translateY(-10px);
+
+    background:#1b2520;
+}
+
+
+/*=========================
+      ANIMATION
+==========================*/
+
+.Azadeh .travel-card{
+
+    animation:fadeUp .8s ease;
+}
+
+.Azadeh .tip{
+
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+
+/*=========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.Azadeh .hero-content h1{
+
+font-size:3rem;
+
+}
+
+.Azadeh .hero-content p{
+
+width:90%;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.Azadeh .hero{
+
+height:55vh;
+
+}
+
+.Azadeh .hero-content h1{
+
+font-size:2.3rem;
+
+}
+
+.Azadeh .hero-content p{
+
+font-size:16px;
+
+}
+
+.Azadeh .travel-card{
+
+padding:30px 20px;
+
+}
+
+}
