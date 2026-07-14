@@ -150,7 +150,7 @@ body {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   border-radius: 25px;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
@@ -259,13 +259,13 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 } /* ==================== CTA BUTTON ==================== */
 .cta-button {
-  background: linear-gradient(135deg, #f4a300, #ffc233);
-  color: white;
+  background: linear-gradient(135deg, #78964b 0%, #b9c96a 50%, #4d6b2f 100%);
+  color: #262f17;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
   transition: all 0.3s ease;
   white-space: nowrap;
