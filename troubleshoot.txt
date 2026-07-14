@@ -1,3 +1,300 @@
+(Azadeh style.css)
+/*=========================
+      COLOR PALETTE
+==========================*/
+
+:root{
+    --black:#12171B;
+    --black-light:#141F1B;
+    --green:#29551D;
+    --yellow:#F5A306;
+    --white:#F6F4EE;
+}
+
+.Azadeh{
+    background:var(--black);
+    color:var(--white);
+}
+
+
+/*=========================
+        HERO
+==========================*/
+
+.Azadeh .hero{
+
+    height:65vh;
+
+    background:
+    linear-gradient(rgba(18,23,27,.65),
+    rgba(18,23,27,.65)),
+    url(Azadehimage/hero.jpg);
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+}
+
+.Azadeh .hero-content h1{
+
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.Azadeh .hero-content p{
+
+    font-size:1.2rem;
+    width:60%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.Azadeh .hero-line{
+
+    width:90px;
+    height:5px;
+    background:var(--yellow);
+    margin:25px auto;
+    border-radius:20px;
+}
+
+
+/*=========================
+     TRAVEL SECTION
+==========================*/
+
+.Azadeh .travel-info{
+
+    background:var(--black);
+}
+
+.Azadeh .travel-card{
+
+    background:var(--black-light);
+
+    border:1px solid rgba(41,85,29,.7);
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.Azadeh .travel-card i{
+
+    font-size:2rem;
+
+    color:#7CAF43;
+
+    margin-bottom:20px;
+
+    display:block;
+}
+
+.Azadeh .travel-card h3{
+
+    font-size:1.3rem;
+
+    font-weight:600;
+}
+
+.Azadeh .title-line{
+
+    width:45px;
+
+    height:4px;
+
+    background:var(--yellow);
+
+    margin:15px auto 25px;
+
+    border-radius:20px;
+}
+
+.Azadeh .travel-card p{
+
+    color:#d8d8d8;
+
+    line-height:30px;
+}
+
+
+/* Hover */
+
+.Azadeh .travel-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--yellow);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+
+/*=========================
+      SAFETY
+==========================*/
+
+.Azadeh .safety{
+
+    background:linear-gradient(#1d3e15,#29551D);
+
+}
+
+.Azadeh .safety h2{
+
+    font-size:2.5rem;
+
+    font-weight:bold;
+}
+
+.Azadeh .tip{
+
+    background:var(--black-light);
+
+    border-radius:18px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.Azadeh .circle{
+
+    width:90px;
+
+    height:90px;
+
+    background:var(--yellow);
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.Azadeh .circle i{
+
+    color:var(--black);
+
+    font-size:40px;
+}
+
+.Azadeh .tip p{
+
+    margin:0;
+
+    line-height:28px;
+}
+
+.Azadeh .tip:hover{
+
+    transform:translateY(-10px);
+
+    background:#1b2520;
+}
+
+
+/*=========================
+      ANIMATION
+==========================*/
+
+.Azadeh .travel-card{
+
+    animation:fadeUp .8s ease;
+}
+
+.Azadeh .tip{
+
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+
+/*=========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.Azadeh .hero-content h1{
+
+font-size:2.6rem;
+
+}
+
+.Azadeh .hero-content p{
+
+width:90%;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.Azadeh .hero{
+
+height:55vh;
+
+}
+
+.Azadeh .hero-content h1{
+
+font-size:2rem;
+
+}
+
+.Azadeh .hero-content p{
+
+font-size:16px;
+
+}
+
+.Azadeh .travel-card{
+
+padding:30px 20px;
+
+}
+
+}
+(style.css)
 /*
 .sniglet-regular {
   font-family: "Sniglet", system-ui;
@@ -11,7 +308,6 @@
   font-style: normal;
 }
 */
-
 
 * {
   margin: 0;
@@ -1637,3 +1933,404 @@ testimonials====================================*/
   box-shadow: 0 10px 25px #4d6b2f;
   border-color: #273617;
 }
+
+(HTML)
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Azadeh style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+      <div class="floating-circle"></div>
+      <div class="floating-circle"></div>
+      <div class="floating-circle"></div>
+    </div>
+
+    <!-- Advanced Navigation Bar -->
+    <nav class="navbar-container">
+      <div class="navbar">
+        <!-- Brand/Logo -->
+        <div class="navbar-brand d-flex">
+          <a href="#" class="text-decoration-none"
+            ><img
+              src="pictures/aca7b375-2e96-413a-af42-244dd7e7b7cf - Copy.png"
+              alt=""
+              class="logo"
+              style="height: 3rem"
+          /></a>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="navbar-nav" id="navbarNav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">
+              <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9,22 9,12 15,12 15,22"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Azadeh Explore.html" class="nav-link ">
+              <svg class="nav-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Explore</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="activities.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Activities</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#cta" class="cta-button"> Get Started </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobileToggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <a href="#" class="mobile-menu-brand">
+          <div class="logo-icon"></div>
+          <span class="brand-text">HoneyDew</span>
+        </a>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <span>×</span>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-item">
+          <a href="#home" class="mobile-menu-link active">
+            <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9,22 9,12 15,12 15,22"></polyline>
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#explore" class="mobile-menu-link">
+            <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Explore</span>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#activities" class="mobile-menu-link">
+            <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Activities</span>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#contact" class="mobile-menu-link">
+            <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-cta">
+        <a href="#cta" class="mobile-cta-button"> Get Started </a>
+      </div>
+    </div>
+
+    <!-- Azadeh part -->
+    <div class="container-fluid Azadeh px-0">
+      <main>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="container mt-5">
+            <div class="hero-content text-center mt-5">
+              <h1>Travel Information</h1>
+
+              <p>
+                Everything you need to know before visiting this amazing
+                destination.
+              </p>
+
+              <div class="hero-line"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Travel Information -->
+
+        <section class="travel-info py-5">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="travel-card">
+                  <i class="bi bi-geo-alt-fill"></i>
+
+                  <h3>How to Get There</h3>
+
+                  <div class="title-line"></div>
+
+                  <p>
+                    Reach the destination by domestic flights, highways or
+                    railway depending on your location.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="travel-card">
+                  <i class="bi bi-bus-front-fill"></i>
+
+                  <h3>Transportation</h3>
+
+                  <div class="title-line"></div>
+
+                  <p>
+                    Taxi, buses, rental cars and local transportation are
+                    available throughout the city.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="travel-card">
+                  <i class="bi bi-ticket-perforated-fill"></i>
+
+                  <h3>Entry Fees</h3>
+
+                  <div class="title-line"></div>
+
+                  <p>
+                    Ticket prices vary depending on the attraction. Students
+                    receive discounts.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="travel-card">
+                  <i class="bi bi-clock-fill"></i>
+
+                  <h3>Opening Hours</h3>
+
+                  <div class="title-line"></div>
+
+                  <p>
+                    Most attractions are open daily from 8:00 AM to 6:00 PM.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="travel-card">
+                  <i class="bi bi-cloud-sun-fill"></i>
+
+                  <h3>Weather</h3>
+
+                  <div class="title-line"></div>
+
+                  <p>
+                    Spring and autumn are the best seasons to visit because of
+                    the pleasant weather.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Safety -->
+
+        <section class="safety py-5">
+          <div class="container">
+            <h2 class="text-center mb-5">Safety Tips</h2>
+
+            <div class="row g-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="tip">
+                  <div class="circle">
+                    <i class="bi bi-lock-fill"></i>
+                  </div>
+
+                  <p>Keep your valuables secure.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="tip">
+                  <div class="circle">
+                    <i class="bi bi-droplet-fill"></i>
+                  </div>
+
+                  <p>Carry enough drinking water.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="tip">
+                  <div class="circle">
+                    <i class="bi bi-map-fill"></i>
+                  </div>
+
+                  <p>Follow local travel guidance.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="tip">
+                  <div class="circle">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+
+                  <p>Keep emergency contacts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!--footer-->
+
+    <footer class="footer" style="color: #12171b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 footer-section">
+            <div class="footer-logo">HoneyDew</div>
+            <p class="footer-about">
+              We are dedicated to providing the best service to our customers.
+              Our mission is to create innovative solutions that make a
+              difference in people's lives.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-section">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-section">
+            <h5>Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 footer-section">
+            <h5>Newsletter</h5>
+            <p class="footer-about">
+              Subscribe to our newsletter for updates, news, and exclusive
+              offers.
+            </p>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Enter your email" />
+              <button class="newsletter-btn">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+          <p>© 2024 CompanyName. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
