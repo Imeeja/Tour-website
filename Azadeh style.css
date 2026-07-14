@@ -13,7 +13,6 @@
 .Azadeh{
     background:var(--black);
     color:var(--white);
-    font-family: "Poppins",sans-serif;
 }
 
 
@@ -40,7 +39,7 @@
 
 .Azadeh .hero-content h1{
 
-    font-size:4rem;
+    font-size:2.5rem;
     font-weight:700;
 }
 
@@ -90,7 +89,7 @@
 
 .Azadeh .travel-card i{
 
-    font-size:55px;
+    font-size:2rem;
 
     color:#7CAF43;
 
@@ -101,7 +100,7 @@
 
 .Azadeh .travel-card h3{
 
-    font-size:30px;
+    font-size:1.3rem;
 
     font-weight:600;
 }
@@ -151,7 +150,7 @@
 
 .Azadeh .safety h2{
 
-    font-size:45px;
+    font-size:2.5rem;
 
     font-weight:bold;
 }
@@ -254,7 +253,7 @@
 
 .Azadeh .hero-content h1{
 
-font-size:3rem;
+font-size:2.6rem;
 
 }
 
@@ -277,7 +276,7 @@ height:55vh;
 
 .Azadeh .hero-content h1{
 
-font-size:2.3rem;
+font-size:2rem;
 
 }
 
